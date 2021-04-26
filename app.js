@@ -26,6 +26,8 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToCaps(userChoice)}  beats  ${computerChoice}. You win!`
+    document.getElementById(userChoice).classList.add('green-glow');
+    setTimeout(() => document.getElementById(userChoice).classList.remove('green-glow') , 1000);
 }
 
 function lose(userChoice, computerChoice){ 
@@ -33,17 +35,21 @@ function lose(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToCaps(userChoice)}  loses to  ${computerChoice}. You lose!`
+    document.getElementById(userChoice).classList.add('red-glow');
+    setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow') , 1000);
 }
  
 function tie(userChoice, computerChoice){
     result_p.innerHTML = `${convertToCaps(userChoice)}  equals  ${computerChoice}. It's a tie!`
+    document.getElementById(userChoice).classList.add('gray-glow');
+    setTimeout(() => document.getElementById(userChoice).classList.remove('gray-glow') , 1000);
 }
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice){
         case "rockscissors":
-        case "paoerrock":
+        case "paperrock":
         case "scissorspaper":
             win(userChoice, computerChoice);
             break;
@@ -62,17 +68,11 @@ function game(userChoice) {
 
 
 function main() {
-    rock_div.addEventListener('click', function() {
-        game("rock");
-    })
+    rock_div.addEventListener('click', () => game("rock"));
 
-    paper_div.addEventListener('click', function() {
-        game("paper");
-    })
+    paper_div.addEventListener('click', () => game("paper"));
 
-    scissors_div.addEventListener('click', function() {
-        game("scissors");
-    })
+    scissors_div.addEventListener('click', () => game("scissors"));
 }
 
 main();
