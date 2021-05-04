@@ -2,19 +2,13 @@
 
 This is a classic game that every programmer start off with to build their JS knowledge. This game against the computer will allow you to play rock paper scissors and keep track of the scores. 
 
-![homepage] "Homepage")
+![homepage](images/rps.png "Homepage")
 
 ## Application Features
-- User can log in with a username and password
-- User can navigate to garden rooms and click through each room 
-- New user can create a garden 
-- User can view, edit, and delete their garden
-- *Future update* User can take a quiz to determine which plants are best for their lifestyle 
-
-[DEMO](https://www.youtube.com/watch?v=2jGrlg2NKVs)
-
-![editpage](app/assets/readme_images/editgarden.png "Edit Page")
-![gardenpage](app/assets/readme_images/garden.png "Garden")
+- User can play game
+- Computer will make random selection 
+- Player scores will be kept
+- Win/lose/tie animations
 
 ## Built With
 - Ruby
