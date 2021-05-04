@@ -22,7 +22,8 @@ This is a classic game that every programmer start off with to build their JS kn
 - More animated design and features
 
 ## Challenges 
-Timing and figuring out the back end! We found ourselves in the last moments trying to solve some major issues in our forms and having them work properly. Thankfully after some brain storming and collective thinking, we found an alternative to make it work. 
+- Figuring out a simple and intuitive design
+- The computer selection function
 
 ## Authors
 - Alexa Botello
