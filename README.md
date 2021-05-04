@@ -1,8 +1,8 @@
 # Rock Paper Scissors
 
-The Virtual Botanic Garden offers a virtual botanical garden tour. Visit different plant rooms to browse and learn about some of the most beautiful plants. Find the perfect plants for you based on your preferences and gardening level. Cacti, flowers, palms, herbs, and more are available for collection with just a few clicks. Once you have chosen which plants you would like in your garden, quickly fill out our form to create your garden. Visit this garden at any time.
+This is a classic game that every programmer start off with to build their JS knowledge. This game against the computer will allow you to play rock paper scissors and keep track of the scores. 
 
-![homepage](app/assets/readme_images/homepage.png "Homepage")
+![homepage] "Homepage")
 
 ## Application Features
 - User can log in with a username and password
