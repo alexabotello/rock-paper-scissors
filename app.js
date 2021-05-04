@@ -15,6 +15,7 @@ function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
+
 function convertToCaps(word) {
     if (word === "rock") return "Rock";
     if (word === "paper") return "Paper";
@@ -76,3 +77,4 @@ function main() {
 }
 
 main();
+
